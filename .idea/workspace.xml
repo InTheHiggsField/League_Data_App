@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43964e1f-d557-45cc-8f9a-37076f2fec6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LeagueDataApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Champion_JSON.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_Gather.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_key.txt" afterDir="false" />
-    </list>
+    <list default="true" id="43964e1f-d557-45cc-8f9a-37076f2fec6c" name="Changes" comment="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +67,19 @@
       <option name="presentableId" value="Default" />
       <updated>1781070641893</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it.">
+      <option name="closed" value="true" />
+      <created>1781591381118</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781591381118</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it." />
   </component>
 </project>

@@ -1,0 +1,6882 @@
+{
+    "Aatrox_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Aatrox_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Aatrox_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Aatrox_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Aatrox_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ahri_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ahri_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ahri_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ahri_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ahri_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Akali_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Akali_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Akali_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Akali_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Akali_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Akshan_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Akshan_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Akshan_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Akshan_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Akshan_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Alistar_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Alistar_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Alistar_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Alistar_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Alistar_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ambessa_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ambessa_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ambessa_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ambessa_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ambessa_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Amumu_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Amumu_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Amumu_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Amumu_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Amumu_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Anivia_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Anivia_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Anivia_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Anivia_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Anivia_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Annie_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Annie_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Annie_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Annie_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Annie_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Aphelios_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Aphelios_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Aphelios_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Aphelios_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Aphelios_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ashe_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ashe_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ashe_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ashe_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ashe_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Aurelion Sol_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Aurelion Sol_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Aurelion Sol_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Aurelion Sol_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Aurelion Sol_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Aurora_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Aurora_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Aurora_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Aurora_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Aurora_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Azir_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Azir_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Azir_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Azir_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Azir_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Bard_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Bard_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Bard_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Bard_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Bard_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Bel'Veth_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Bel'Veth_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Bel'Veth_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Bel'Veth_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Bel'Veth_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Blitzcrank_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Blitzcrank_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Blitzcrank_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Blitzcrank_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Blitzcrank_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Brand_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Brand_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Brand_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Brand_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Brand_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Braum_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Braum_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Braum_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Braum_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Braum_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Briar_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Briar_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Briar_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Briar_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Briar_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Caitlyn_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Caitlyn_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Caitlyn_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Caitlyn_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Caitlyn_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Camille_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Camille_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Camille_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Camille_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Camille_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Cassiopeia_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Cassiopeia_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Cassiopeia_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Cassiopeia_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Cassiopeia_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Cho'Gath_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Cho'Gath_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Cho'Gath_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Cho'Gath_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Cho'Gath_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Corki_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Corki_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Corki_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Corki_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Corki_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Darius_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Darius_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Darius_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Darius_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Darius_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Diana_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Diana_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Diana_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Diana_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Diana_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Dr. Mundo_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Dr. Mundo_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Dr. Mundo_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Dr. Mundo_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Dr. Mundo_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Draven_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Draven_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Draven_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Draven_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Draven_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ekko_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ekko_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ekko_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ekko_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ekko_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Elise_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Elise_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Elise_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Elise_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Elise_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Evelynn_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Evelynn_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Evelynn_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Evelynn_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Evelynn_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ezreal_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ezreal_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ezreal_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ezreal_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ezreal_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Fiddlesticks_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Fiddlesticks_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Fiddlesticks_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Fiddlesticks_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Fiddlesticks_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Fiora_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Fiora_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Fiora_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Fiora_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Fiora_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Fizz_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Fizz_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Fizz_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Fizz_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Fizz_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Galio_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Galio_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Galio_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Galio_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Galio_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Gangplank_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Gangplank_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Gangplank_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Gangplank_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Gangplank_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Garen_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Garen_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Garen_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Garen_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Garen_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Gnar_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Gnar_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Gnar_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Gnar_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Gnar_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Gragas_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Gragas_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Gragas_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Gragas_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Gragas_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Graves_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Graves_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Graves_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Graves_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Graves_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Gwen_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Gwen_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Gwen_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Gwen_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Gwen_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Hecarim_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Hecarim_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Hecarim_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Hecarim_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Hecarim_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Heimerdinger_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Heimerdinger_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Heimerdinger_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Heimerdinger_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Heimerdinger_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Hwei_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Hwei_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Hwei_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Hwei_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Hwei_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Illaoi_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Illaoi_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Illaoi_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Illaoi_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Illaoi_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Irelia_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Irelia_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Irelia_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Irelia_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Irelia_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ivern_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ivern_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ivern_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ivern_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ivern_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Janna_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Janna_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Janna_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Janna_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Janna_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Jarvan IV_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Jarvan IV_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Jarvan IV_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Jarvan IV_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Jarvan IV_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Jax_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Jax_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Jax_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Jax_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Jax_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Jayce_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Jayce_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Jayce_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Jayce_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Jayce_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Jhin_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Jhin_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Jhin_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Jhin_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Jhin_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Jinx_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Jinx_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Jinx_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Jinx_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Jinx_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "K'Sante_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "K'Sante_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "K'Sante_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "K'Sante_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "K'Sante_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kai'Sa_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kai'Sa_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kai'Sa_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kai'Sa_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kai'Sa_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kalista_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kalista_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kalista_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kalista_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kalista_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Karma_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Karma_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Karma_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Karma_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Karma_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Karthus_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Karthus_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Karthus_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Karthus_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Karthus_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kassadin_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kassadin_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kassadin_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kassadin_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kassadin_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Katarina_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Katarina_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Katarina_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Katarina_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Katarina_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kayle_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kayle_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kayle_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kayle_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kayle_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kayn_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kayn_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kayn_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kayn_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kayn_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kennen_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kennen_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kennen_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kennen_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kennen_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kha'Zix_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kha'Zix_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kha'Zix_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kha'Zix_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kha'Zix_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kindred_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kindred_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kindred_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kindred_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kindred_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kled_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kled_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kled_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kled_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kled_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Kog'Maw_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Kog'Maw_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Kog'Maw_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Kog'Maw_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Kog'Maw_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "LeBlanc_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "LeBlanc_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "LeBlanc_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "LeBlanc_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "LeBlanc_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Lee Sin_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Lee Sin_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Lee Sin_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Lee Sin_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Lee Sin_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Leona_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Leona_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Leona_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Leona_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Leona_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Lillia_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Lillia_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Lillia_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Lillia_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Lillia_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Lissandra_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Lissandra_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Lissandra_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Lissandra_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Lissandra_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Lucian_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Lucian_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Lucian_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Lucian_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Lucian_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Lulu_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Lulu_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Lulu_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Lulu_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Lulu_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Lux_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Lux_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Lux_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Lux_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Lux_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Malphite_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Malphite_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Malphite_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Malphite_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Malphite_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Malzahar_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Malzahar_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Malzahar_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Malzahar_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Malzahar_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Maokai_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Maokai_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Maokai_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Maokai_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Maokai_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Master Yi_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Master Yi_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Master Yi_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Master Yi_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Master Yi_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Mel_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Mel_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Mel_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Mel_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Mel_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Milio_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Milio_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Milio_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Milio_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Milio_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Miss Fortune_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Miss Fortune_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Miss Fortune_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Miss Fortune_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Miss Fortune_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Mordekaiser_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Mordekaiser_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Mordekaiser_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Mordekaiser_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Mordekaiser_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Morgana_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Morgana_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Morgana_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Morgana_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Morgana_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Naafiri_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Naafiri_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Naafiri_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Naafiri_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Naafiri_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nami_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nami_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nami_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nami_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nami_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nasus_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nasus_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nasus_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nasus_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nasus_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nautilus_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nautilus_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nautilus_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nautilus_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nautilus_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Neeko_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Neeko_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Neeko_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Neeko_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Neeko_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nidalee_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nidalee_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nidalee_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nidalee_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nidalee_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nilah_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nilah_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nilah_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nilah_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nilah_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nocturne_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nocturne_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nocturne_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nocturne_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nocturne_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Nunu & Willump_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Nunu & Willump_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Nunu & Willump_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Nunu & Willump_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Nunu & Willump_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Olaf_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Olaf_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Olaf_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Olaf_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Olaf_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Orianna_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Orianna_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Orianna_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Orianna_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Orianna_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ornn_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ornn_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ornn_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ornn_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ornn_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Pantheon_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Pantheon_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Pantheon_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Pantheon_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Pantheon_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Poppy_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Poppy_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Poppy_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Poppy_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Poppy_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Pyke_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Pyke_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Pyke_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Pyke_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Pyke_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Qiyana_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Qiyana_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Qiyana_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Qiyana_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Qiyana_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Quinn_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Quinn_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Quinn_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Quinn_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Quinn_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Rakan_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Rakan_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Rakan_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Rakan_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Rakan_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Rammus_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Rammus_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Rammus_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Rammus_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Rammus_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Rek'Sai_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Rek'Sai_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Rek'Sai_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Rek'Sai_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Rek'Sai_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Rell_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Rell_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Rell_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Rell_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Rell_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Renata Glasc_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Renata Glasc_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Renata Glasc_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Renata Glasc_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Renata Glasc_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Renekton_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Renekton_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Renekton_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Renekton_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Renekton_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Rengar_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Rengar_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Rengar_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Rengar_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Rengar_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Riven_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Riven_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Riven_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Riven_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Riven_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Rumble_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Rumble_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Rumble_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Rumble_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Rumble_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ryze_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ryze_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ryze_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ryze_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ryze_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Samira_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Samira_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Samira_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Samira_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Samira_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Sejuani_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Sejuani_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Sejuani_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Sejuani_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Sejuani_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Senna_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Senna_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Senna_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Senna_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Senna_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Seraphine_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Seraphine_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Seraphine_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Seraphine_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Seraphine_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Sett_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Sett_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Sett_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Sett_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Sett_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Shaco_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Shaco_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Shaco_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Shaco_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Shaco_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Shen_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Shen_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Shen_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Shen_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Shen_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Shyvana_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Shyvana_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Shyvana_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Shyvana_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Shyvana_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Singed_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Singed_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Singed_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Singed_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Singed_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Sion_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Sion_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Sion_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Sion_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Sion_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Sivir_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Sivir_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Sivir_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Sivir_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Sivir_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Skarner_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Skarner_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Skarner_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Skarner_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Skarner_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Smolder_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Smolder_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Smolder_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Smolder_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Smolder_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Sona_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Sona_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Sona_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Sona_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Sona_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Soraka_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Soraka_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Soraka_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Soraka_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Soraka_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Swain_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Swain_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Swain_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Swain_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Swain_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Sylas_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Sylas_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Sylas_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Sylas_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Sylas_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Syndra_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Syndra_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Syndra_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Syndra_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Syndra_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Tahm Kench_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Tahm Kench_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Tahm Kench_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Tahm Kench_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Tahm Kench_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Taliyah_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Taliyah_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Taliyah_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Taliyah_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Taliyah_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Talon_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Talon_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Talon_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Talon_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Talon_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Taric_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Taric_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Taric_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Taric_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Taric_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Teemo_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Teemo_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Teemo_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Teemo_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Teemo_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Thresh_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Thresh_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Thresh_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Thresh_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Thresh_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Tristana_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Tristana_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Tristana_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Tristana_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Tristana_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Trundle_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Trundle_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Trundle_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Trundle_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Trundle_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Tryndamere_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Tryndamere_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Tryndamere_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Tryndamere_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Tryndamere_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Twisted Fate_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Twisted Fate_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Twisted Fate_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Twisted Fate_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Twisted Fate_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Twitch_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Twitch_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Twitch_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Twitch_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Twitch_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Udyr_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Udyr_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Udyr_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Udyr_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Udyr_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Urgot_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Urgot_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Urgot_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Urgot_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Urgot_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Varus_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Varus_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Varus_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Varus_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Varus_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Vayne_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Vayne_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Vayne_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Vayne_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Vayne_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Veigar_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Veigar_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Veigar_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Veigar_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Veigar_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Vel'Koz_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Vel'Koz_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Vel'Koz_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Vel'Koz_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Vel'Koz_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Vex_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Vex_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Vex_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Vex_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Vex_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Vi_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Vi_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Vi_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Vi_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Vi_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Viego_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Viego_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Viego_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Viego_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Viego_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Viktor_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Viktor_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Viktor_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Viktor_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Viktor_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Vladimir_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Vladimir_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Vladimir_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Vladimir_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Vladimir_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Volibear_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Volibear_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Volibear_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Volibear_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Volibear_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Warwick_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Warwick_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Warwick_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Warwick_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Warwick_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Wukong_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Wukong_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Wukong_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Wukong_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Wukong_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Xayah_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Xayah_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Xayah_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Xayah_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Xayah_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Xerath_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Xerath_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Xerath_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Xerath_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Xerath_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Xin Zhao_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Xin Zhao_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Xin Zhao_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Xin Zhao_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Xin Zhao_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Yasuo_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Yasuo_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Yasuo_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Yasuo_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Yasuo_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Yone_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Yone_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Yone_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Yone_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Yone_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Yorick_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Yorick_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Yorick_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Yorick_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Yorick_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Yunara_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Yunara_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Yunara_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Yunara_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Yunara_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Yuumi_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Yuumi_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Yuumi_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Yuumi_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Yuumi_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zaahen_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zaahen_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zaahen_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zaahen_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zaahen_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zac_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zac_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zac_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zac_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zac_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zed_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zed_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zed_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zed_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zed_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zeri_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zeri_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zeri_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zeri_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zeri_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Ziggs_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Ziggs_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Ziggs_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Ziggs_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Ziggs_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zilean_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zilean_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zilean_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zilean_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zilean_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zoe_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zoe_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zoe_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zoe_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zoe_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    },
+    "Zyra_top": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "top"
+    },
+    "Zyra_jungle": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "jungle"
+    },
+    "Zyra_mid": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "mid"
+    },
+    "Zyra_bot": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "bot"
+    },
+    "Zyra_support": {
+        "Winrate": 0,
+        "Ban Rate": 0,
+        "Matches": 0,
+        "Countered_By": [],
+        "Counters": [],
+        "Role": "support"
+    }
+}
