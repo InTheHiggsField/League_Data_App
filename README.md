@@ -18,3 +18,14 @@ Limitations
 
 
 
+Data Management
+
+Due to how the data needs to be queueried from the Riot API, PUUIDs will need to be obtained and then stored, these may find themselves in this repository but they will have no real functionality with any other development key. But they might give any viewers of the repository intel how they might need to query the database and how PUUIDs look. 
+
+Tables:
+- A Primary Key Table that contains every League of Legends Champion
+- Secondary Table for each Champion that shows their match ups and builds
+- A plain text table that contains all of the PUUIDs for future query purposes
+- A Table that contains the top 500 Players, Their Winrates, Champion Preferences, And Role.
+
+
