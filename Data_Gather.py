@@ -1,3 +1,5 @@
+import csv
+
 import requests
 import json
 import pandas as pd
@@ -9,21 +11,105 @@ with open("api_key.txt", "r") as f:
     api_key = f.readline()
 
 def query_challenger():
-    response = requests.get("https://riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
+    response = requests.get("https://na1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
     with open("challengerleagues.json", "w") as f:
-        f.write(response.text)
+        json.dump(response.json(), f, indent=4)
 
 def query_grandmaster():
-    response = requests.get("https://riotgames.com/lol/league/v4/grandmasterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
+    response = requests.get("https://na1.api.riotgames.com/lol/league/v4/grandmasterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
     with open("grandmasterleagues.json", "w") as f:
-        f.write(response.text)
+        json.dump(response.json(), f, indent=4)
 
 def query_masters():
-    response = requests.get("https://riotgames.com/lol/league/v4/masterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
+    response = requests.get("https://na1.api.riotgames.com/lol/league/v4/masterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
     with open("masterleagues.json", "w") as f:
-        f.write(response.text)
+        json.dump(response.json(), f, indent=4)
 
-        
+#query_challenger()
+#query_grandmaster()
+#query_masters()
+
+"""This function will extract puuids from any of the respective league jsons, in order to make a database of purely puuids which can be used to query for match history data in order to ultimately acquire champion data"""
+def extract_puuids(passed : str):
+    if passed == "challenger":
+        try:
+            with open("challengerleagues.json", "r") as f:
+                challenger = json.load(f)
+                challenger_puuids = []
+                for entries in challenger["entries"]:
+                    challenger_puuids.append(entries["puuid"])
+                for entries in challenger_puuids:
+                    entries = f"{entries}\n"
+        except Exception as e:
+            print(f"{e}, try 1")
+        try:
+            with open("puuids.txt", "w+") as f:
+                as_is = f.readlines()
+                if as_is:
+                    as_is_set = set(as_is)
+                    puuids_set = set(challenger_puuids)
+                    identical_puuids_removed = puuids_set.difference(as_is_set)
+                    f.writelines(identical_puuids_removed)
+                if not as_is:
+                    for entries in challenger_puuids:
+                        f.write(f"{entries}\n")
+        except Exception as e:
+            print(f"{e}, try 2")
+        return
+    if passed == "grandmaster":
+        try:
+            with open("grandmasterleagues.json", "r") as f:
+                challenger = json.load(f)
+                challenger_puuids = []
+                for entries in challenger["entries"]:
+                    challenger_puuids.append(entries["puuid"])
+                for entries in challenger_puuids:
+                    entries = f"{entries}\n"
+        except Exception as e:
+            print(f"{e}, try 1")
+        try:
+            with open("puuids.txt", "w+") as f:
+                as_is = f.readlines()
+                if as_is:
+                    as_is_set = set(as_is)
+                    puuids_set = set(challenger_puuids)
+                    identical_puuids_removed = puuids_set.difference(as_is_set)
+                    f.writelines(identical_puuids_removed)
+                if not as_is:
+                    for entries in challenger_puuids:
+                        f.write(f"{entries}\n")
+        except Exception as e:
+            print(f"{e}, try 2")
+        return
+    if passed == "masters":
+        try:
+            with open("masterleagues.json", "r") as f:
+                challenger = json.load(f)
+                challenger_puuids = []
+                for entries in challenger["entries"]:
+                    challenger_puuids.append(entries["puuid"])
+                for entries in challenger_puuids:
+                    entries = f"{entries}\n"
+        except Exception as e:
+            print(f"{e}, try 1")
+        try:
+            with open("puuids.txt", "w+") as f:
+                as_is = f.readlines()
+                if as_is:
+                    as_is_set = set(as_is)
+                    puuids_set = set(challenger_puuids)
+                    identical_puuids_removed = puuids_set.difference(as_is_set)
+                    f.writelines(identical_puuids_removed)
+                if not as_is:
+                    for entries in challenger_puuids:
+                        f.write(f"{entries}\n")
+        except Exception as e:
+            print(f"{e}, try 2")
+        return
+
+extract_puuids("challenger")
+extract_puuids("grandmaster")
+extract_puuids("masters")
 
 #Our Outline
 
