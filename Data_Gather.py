@@ -1,8 +1,10 @@
 import csv
-
 import requests
 import json
 import pandas as pd
+import time
+import ast
+
 
 SummonerID_List = []
 PUUID_List = []
@@ -24,6 +26,43 @@ def query_masters():
     response = requests.get("https://na1.api.riotgames.com/lol/league/v4/masterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
     with open("masterleagues.json", "w") as f:
         json.dump(response.json(), f, indent=4)
+
+
+"""This function will query the Riot API for the match IDs played by each PUUID in the PUUID.txt list."""
+def query_summoners():
+    try:
+        with open("puuids.txt", "r") as f:
+            puuids = f.readlines()
+            counter = 0
+            for puuid in puuids:
+                response = requests.get(f"https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?type=ranked&start=0&count=100&api_key={api_key}")
+                #Response should be of type list with elements of type string
+                response_list = response.json()
+                for entries in response_list:
+                    print(entries)
+                #Use this to get an example of the return for refined data extraction
+                try:
+                    with open("sampleMatchV5query.txt", "w") as f:
+                        f.write(response.text)
+                except Exception as e:
+                    print(f"{e}, error writing to sampleMatchV5query.txt")
+                """This loop will find and store all match IDs related to the top 10000 players, there WILL be duplicates, which can 
+                be accounted for by another function which would require less work than finding and removing duplicates in place"""
+                try:
+                    with open("matchID.txt", "a") as f:
+                        for entries in response_list:
+                            print(f"writing {entries} to matchID.txt")
+                            f.writelines(f"{entries}\n")
+                except Exception as e:
+                    print(f"{e}, error writing to matchID.txt")
+                counter += 1
+                print(f"query # {counter}")
+                time.sleep(0.05)
+                if counter % 100 == 0:
+                    print("Query on Cooldown")
+                    time.sleep(120)
+    except Exception as e:
+        print(f"{e}, error on querying puuids.txt")
 
 #query_challenger()
 #query_grandmaster()
@@ -107,9 +146,10 @@ def extract_puuids(passed : str):
             print(f"{e}, try 2")
         return
 
-extract_puuids("challenger")
-extract_puuids("grandmaster")
-extract_puuids("masters")
+#extract_puuids("challenger")
+#extract_puuids("grandmaster")
+#extract_puuids("masters")
+query_summoners()
 
 #Our Outline
 
