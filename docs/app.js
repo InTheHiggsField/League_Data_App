@@ -81,7 +81,7 @@
   function renderFirst() {
     const combos = combosById();
     const matchups = roleData().matchups;
-    const pool = [...combos.values()].filter((c) => c.wr > 0.5 && c.safe != null);
+    const pool = [...combos.values()].filter((c) => c.wr > 0.48 && c.safe != null); //Changed 0.5 -> 0.48 to allow for potentially safer blind picks that don't themselves have a high winrate.
     const hidden = combos.size - pool.length;
 
     // Lowest conservative spread first; ties go to the higher winrate.
