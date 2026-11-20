@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draft Helper — League winrates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Draft Helper</h1>
+      <p id="data-info" class="muted">Loading data…</p>
+    </div>
+    <label class="tier">
+      <span class="muted">Rank</span>
+      <select id="tier-select"></select>
+    </label>
+  </header>
+
+  <main>
+    <section class="controls">
+      <div class="step">
+        <span class="step-label">1. Your role</span>
+        <div id="role-buttons" class="segmented" role="tablist"></div>
+      </div>
+      <div class="step">
+        <span class="step-label">2. Your situation</span>
+        <div id="mode-buttons" class="segmented modes" role="tablist">
+          <button data-mode="first">I'm first picking</button>
+          <button data-mode="counter">I'm counter picking</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- First pick -->
+    <section id="view-first" class="view" hidden>
+      <p class="explain">
+        Safe blind picks: champions with a <strong>winrate above 50%</strong> whose winrate changes the least
+        from one lane opponent to the next, sorted by lowest <strong>matchup spread</strong>.
+        <span class="badge best">Best pick</span> means no other champion here has both a higher winrate and a
+        lower spread.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">#</th>
+              <th>Champion</th>
+              <th class="num">Winrate</th>
+              <th class="num" title="How much this champion's winrate moves between lane opponents. A conservative estimate: we're about 84% sure the real spread is no bigger.">Spread ⓘ</th>
+              <th class="num">Games</th>
+              <th>Hardest matchups</th>
+            </tr>
+          </thead>
+          <tbody id="first-body"></tbody>
+        </table>
+      </div>
+      <p id="first-note" class="muted small"></p>
+    </section>
+
+    <!-- Counter pick -->
+    <section id="view-counter" class="view" hidden>
+      <div class="search">
+        <label for="enemy-input" class="step-label">3. Enemy champion in your lane</label>
+        <div class="combo">
+          <input id="enemy-input" type="text" autocomplete="off" spellcheck="false"
+                 placeholder="Start typing a champion…" role="combobox"
+                 aria-expanded="false" aria-controls="enemy-list" aria-autocomplete="list">
+          <ul id="enemy-list" class="combo-list" role="listbox" hidden></ul>
+        </div>
+      </div>
+      <div id="enemy-card" class="enemy-card" hidden></div>
+      <div id="counter-results" hidden>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th>Champion</th>
+                <th class="num" id="vs-header">Winrate vs</th>
+                <th class="num">Matchup games</th>
+                <th class="num">Overall winrate</th>
+              </tr>
+            </thead>
+            <tbody id="counter-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <p id="counter-note" class="muted small"></p>
+    </section>
+  </main>
+
+  <footer class="muted small">
+    <p id="rules"></p>
+    <p>Draft Helper isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or
+      anyone officially involved in producing or managing Riot Games properties. Riot Games, and all
+      associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
