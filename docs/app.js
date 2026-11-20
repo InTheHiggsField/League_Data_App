@@ -11,6 +11,9 @@
   "use strict";
 
   const D = window.SITE_DATA;
+  // First picks must have at least this winrate. 0.48 rather than 0.5, because some
+  // safe blind picks sit just under 50% because of who plays them (e.g. Ahri at 49.8%).
+  const MIN_BLIND_WR = 0.48;
   const ROLES = [["top", "Top"], ["jungle", "Jungle"], ["mid", "Mid"], ["bot", "Bot"], ["support", "Support"]];
   const T = D ? D.thresholds : {};
   const $ = (id) => document.getElementById(id);
@@ -81,7 +84,7 @@
   function renderFirst() {
     const combos = combosById();
     const matchups = roleData().matchups;
-    const pool = [...combos.values()].filter((c) => c.wr > 0.48 && c.safe != null); //Changed 0.5 -> 0.48 to allow for potentially safer blind picks that don't themselves have a high winrate.
+    const pool = [...combos.values()].filter((c) => c.wr > MIN_BLIND_WR && c.safe != null);
     const hidden = combos.size - pool.length;
 
     // Lowest conservative spread first; ties go to the higher winrate.
@@ -109,9 +112,9 @@
       </tr>`;
     });
     $("first-body").innerHTML = rows.join("") ||
-      `<tr><td colspan="6" class="muted">No ${state.role} champion is above 50% with ${T.combo}+ games in this rank group yet.</td></tr>`;
+      `<tr><td colspan="6" class="muted">No ${state.role} champion is above ${pct(MIN_BLIND_WR, 0)} with ${T.combo}+ games in this rank group yet.</td></tr>`;
     $("first-note").textContent = hidden
-      ? `${hidden} other ${state.role} champion${hidden === 1 ? "" : "s"} with ${T.combo}+ games ${hidden === 1 ? "is" : "are"} hidden for being at or below 50% winrate.`
+      ? `${hidden} other ${state.role} champion${hidden === 1 ? "" : "s"} with ${T.combo}+ games ${hidden === 1 ? "is" : "are"} hidden for being at or below ${pct(MIN_BLIND_WR, 0)} winrate.`
       : "";
   }
 
@@ -236,6 +239,8 @@
     document.querySelectorAll("#mode-buttons button").forEach((b) =>
       b.setAttribute("aria-selected", b.dataset.mode === state.mode));
     $("tier-select").value = state.tier;
+    $("role-title").textContent = ROLES.find(([r]) => r === state.role)[1] + (state.role === "jungle" || state.role === "support" ? "" : " Lane");
+    $("min-wr").textContent = pct(MIN_BLIND_WR, 0);
     const g = D.groups[state.tier];
     $("data-info").textContent =
       `${g.games.toLocaleString()} ranked solo games · ${g.label} · patch ${D.patches.join(", ")} · updated ${D.generated}`;

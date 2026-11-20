@@ -3,100 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Draft Helper — League winrates</title>
+  <title>InTheHiggsField's Draft Helper — League winrates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Marcellus&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top">
-    <div class="brand">
-      <h1>Draft Helper</h1>
-      <p id="data-info" class="muted">Loading data…</p>
-    </div>
-    <label class="tier">
-      <span class="muted">Rank</span>
-      <select id="tier-select"></select>
-    </label>
-  </header>
+  <!-- Rough-edge filter used to tear the parchment's border (see .parchment::before in style.css) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="torn" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="14" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
 
-  <main>
-    <section class="controls">
-      <div class="step">
-        <span class="step-label">1. Your role</span>
-        <div id="role-buttons" class="segmented" role="tablist"></div>
+  <div class="client">
+    <!-- Top window bar -->
+    <header class="chrome-bar">
+      <div class="brand">
+        <div class="logo" aria-label="InTheHiggsField's Draft Helper">
+          <span class="logo-owner">InTheHiggsField's</span>
+          <span class="logo-big">Draft Helper</span>
+        </div>
+        <div id="data-info" class="data-info">Loading data…</div>
       </div>
-      <div class="step">
-        <span class="step-label">2. Your situation</span>
-        <div id="mode-buttons" class="segmented modes" role="tablist">
-          <button data-mode="first">I'm first picking</button>
-          <button data-mode="counter">I'm counter picking</button>
+      <div class="spacer"></div>
+
+      <!-- Placeholder for a future feature: linking a League account -->
+      <aside class="wip" aria-label="Account linking, under construction">
+        <div class="wip-title">Connect Your League Account</div>
+        <div class="wip-body">
+          <span class="wip-icon" aria-hidden="true">⚒</span>
+          <p>Linking your account for personal stats is a <strong>work in progress</strong>. Check back soon.</p>
+          <button class="glossy disabled" disabled title="Coming soon">Coming Soon</button>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Parchment panel -->
+    <main class="parchment">
+      <div class="title-tab"><h1 id="role-title">Mid Lane</h1></div>
+
+      <nav id="role-buttons" class="parch-tabs" role="tablist" aria-label="Your role"></nav>
+
+      <div class="toolbar">
+        <label class="rank-picker">
+          <span>Rank:</span>
+          <span class="select-wrap"><select id="tier-select"></select></span>
+        </label>
+        <div id="mode-buttons" class="mode-buttons" role="tablist" aria-label="Your situation">
+          <button class="glossy" data-mode="first">I'm first picking</button>
+          <button class="glossy" data-mode="counter">I'm counter picking</button>
         </div>
       </div>
-    </section>
 
-    <!-- First pick -->
-    <section id="view-first" class="view" hidden>
-      <p class="explain">
-        Safe blind picks: champions with a <strong>winrate above 48%</strong> whose winrate changes the least
-        from one lane opponent to the next, sorted by lowest <strong>matchup spread</strong>.
-        <span class="badge best">Best pick</span> means no other champion here has both a higher winrate and a
-        lower spread.
-      </p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th class="num">#</th>
-              <th>Champion</th>
-              <th class="num">Winrate</th>
-              <th class="num" title="How much this champion's winrate moves between lane opponents. A conservative estimate: we're about 84% sure the real spread is no bigger.">Spread ⓘ</th>
-              <th class="num">Games</th>
-              <th>Hardest matchups</th>
-            </tr>
-          </thead>
-          <tbody id="first-body"></tbody>
-        </table>
-      </div>
-      <p id="first-note" class="muted small"></p>
-    </section>
-
-    <!-- Counter pick -->
-    <section id="view-counter" class="view" hidden>
-      <div class="search">
-        <label for="enemy-input" class="step-label">3. Enemy champion in your lane</label>
-        <div class="combo">
-          <input id="enemy-input" type="text" autocomplete="off" spellcheck="false"
-                 placeholder="Start typing a champion…" role="combobox"
-                 aria-expanded="false" aria-controls="enemy-list" aria-autocomplete="list">
-          <ul id="enemy-list" class="combo-list" role="listbox" hidden></ul>
-        </div>
-      </div>
-      <div id="enemy-card" class="enemy-card" hidden></div>
-      <div id="counter-results" hidden>
-        <div class="table-wrap">
+      <!-- First pick -->
+      <section id="view-first" class="view" hidden>
+        <h2 class="swoosh">Safe Blind Picks</h2>
+        <p class="explain">
+          Champions with at least a <strong id="min-wr">48%</strong> winrate whose winrate changes the least from
+          one lane opponent to the next, sorted by lowest <strong>matchup spread</strong>.
+          <span class="badge best">Best pick</span> means no other champion here has both a higher winrate and a
+          lower spread.
+        </p>
+        <div class="list-frame">
           <table>
             <thead>
               <tr>
                 <th class="num">#</th>
                 <th>Champion</th>
-                <th class="num" id="vs-header">Winrate vs</th>
-                <th class="num">Matchup games</th>
-                <th class="num">Overall winrate</th>
+                <th class="num">Winrate</th>
+                <th class="num" title="How much this champion's winrate moves between lane opponents. A conservative estimate: we're about 84% sure the real spread is no bigger.">Spread ⓘ</th>
+                <th class="num">Games</th>
+                <th>Hardest matchups</th>
               </tr>
             </thead>
-            <tbody id="counter-body"></tbody>
+            <tbody id="first-body"></tbody>
           </table>
         </div>
-      </div>
-      <p id="counter-note" class="muted small"></p>
-    </section>
-  </main>
+        <p id="first-note" class="note"></p>
+      </section>
 
-  <footer class="muted small">
-    <p id="rules"></p>
-    <p>Draft Helper isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or
-      anyone officially involved in producing or managing Riot Games properties. Riot Games, and all
-      associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
-  </footer>
+      <!-- Counter pick -->
+      <section id="view-counter" class="view" hidden>
+        <h2 class="swoosh">Counter Picks</h2>
+        <div class="search">
+          <label for="enemy-input" class="field-label">Enemy champion in your lane</label>
+          <div class="combo">
+            <input id="enemy-input" type="text" autocomplete="off" spellcheck="false"
+                   placeholder="Find Champion" role="combobox"
+                   aria-expanded="false" aria-controls="enemy-list" aria-autocomplete="list">
+            <ul id="enemy-list" class="combo-list" role="listbox" hidden></ul>
+          </div>
+        </div>
+        <div id="enemy-card" class="enemy-card" hidden></div>
+        <div id="counter-results" hidden>
+          <div class="list-frame">
+            <table>
+              <thead>
+                <tr>
+                  <th class="num">#</th>
+                  <th>Champion</th>
+                  <th class="num" id="vs-header">Winrate vs</th>
+                  <th class="num">Matchup games</th>
+                  <th class="num">Overall winrate</th>
+                </tr>
+              </thead>
+              <tbody id="counter-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <p id="counter-note" class="note"></p>
+      </section>
+    </main>
+
+    <!-- Bottom window bar -->
+    <footer class="chrome-bottom">
+      <p id="rules"></p>
+      <p>InTheHiggsField's Draft Helper isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or
+        anyone officially involved in producing or managing Riot Games properties. Riot Games, and all
+        associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+    </footer>
+  </div>
 
   <script src="data.js"></script>
   <script src="app.js"></script>
