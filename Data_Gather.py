@@ -1,178 +1,202 @@
-import csv
-import requests
-import json
-import pandas as pd
-import time
-import ast
+"""
+Data collection pipeline. Every step can be stopped (Ctrl+C) and started again
+without losing progress or wasting API calls.
 
+    python Data_Gather.py players                 # 1. sample ~200 players from every division, Iron IV -> Challenger
+    python Data_Gather.py mark-stale              #    (once) skip the old June match IDs that have no tier
+    python Data_Gather.py ids                     # 2. last 14 days of solo-queue match IDs for each sampled player
+    python Data_Gather.py matches --limit 3000    # 3. download + parse queued matches, taking turns across tiers
+    python Data_Gather.py status                  # progress per tier
 
-SummonerID_List = []
-PUUID_List = []
+Options: players --per-division 200 | ids --days 14 | matches --limit N --no-raw
 
-with open("api_key.txt", "r") as f:
-    api_key = f.readline()
+In PyCharm, put the step and options (e.g. `matches --limit 3000`) in the
+Run Configuration's "Parameters" field.
 
-def query_challenger():
-    response = requests.get("https://na1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
-    with open("challengerleagues.json", "w") as f:
-        json.dump(response.json(), f, indent=4)
-
-def query_grandmaster():
-    response = requests.get("https://na1.api.riotgames.com/lol/league/v4/grandmasterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
-    with open("grandmasterleagues.json", "w") as f:
-        json.dump(response.json(), f, indent=4)
-
-def query_masters():
-    response = requests.get("https://na1.api.riotgames.com/lol/league/v4/masterleagues/by-queue/RANKED_SOLO_5x5?api_key=" + api_key)
-    with open("masterleagues.json", "w") as f:
-        json.dump(response.json(), f, indent=4)
-
-
-"""This function will query the Riot API for the match IDs played by each PUUID in the PUUID.txt list."""
-def query_summoners():
-    try:
-        with open("puuids.txt", "r") as f:
-            puuids = f.readlines()
-            counter = 0
-            for puuid in puuids:
-                response = requests.get(f"https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?type=ranked&start=0&count=100&api_key={api_key}")
-                #Response should be of type list with elements of type string
-                response_list = response.json()
-                for entries in response_list:
-                    print(entries)
-                #Use this to get an example of the return for refined data extraction
-                try:
-                    with open("sampleMatchV5query.txt", "w") as f:
-                        f.write(response.text)
-                except Exception as e:
-                    print(f"{e}, error writing to sampleMatchV5query.txt")
-                """This loop will find and store all match IDs related to the top 10000 players, there WILL be duplicates, which can 
-                be accounted for by another function which would require less work than finding and removing duplicates in place"""
-                try:
-                    with open("matchID.txt", "a") as f:
-                        for entries in response_list:
-                            print(f"writing {entries} to matchID.txt")
-                            f.writelines(f"{entries}\n")
-                except Exception as e:
-                    print(f"{e}, error writing to matchID.txt")
-                counter += 1
-                print(f"query # {counter}")
-                time.sleep(0.05)
-                if counter % 100 == 0:
-                    print("Query on Cooldown")
-                    time.sleep(120)
-    except Exception as e:
-        print(f"{e}, error on querying puuids.txt")
-
-#query_challenger()
-#query_grandmaster()
-#query_masters()
-
-"""This function will extract puuids from any of the respective league jsons, in order to make a database of purely puuids which can be used to query for match history data in order to ultimately acquire champion data"""
-def extract_puuids(passed : str):
-    if passed == "challenger":
-        try:
-            with open("challengerleagues.json", "r") as f:
-                challenger = json.load(f)
-                challenger_puuids = []
-                for entries in challenger["entries"]:
-                    challenger_puuids.append(entries["puuid"])
-                for entries in challenger_puuids:
-                    entries = f"{entries}\n"
-        except Exception as e:
-            print(f"{e}, try 1")
-        try:
-            with open("puuids.txt", "w+") as f:
-                as_is = f.readlines()
-                if as_is:
-                    as_is_set = set(as_is)
-                    puuids_set = set(challenger_puuids)
-                    identical_puuids_removed = puuids_set.difference(as_is_set)
-                    f.writelines(identical_puuids_removed)
-                if not as_is:
-                    for entries in challenger_puuids:
-                        f.write(f"{entries}\n")
-        except Exception as e:
-            print(f"{e}, try 2")
-        return
-    if passed == "grandmaster":
-        try:
-            with open("grandmasterleagues.json", "r") as f:
-                challenger = json.load(f)
-                challenger_puuids = []
-                for entries in challenger["entries"]:
-                    challenger_puuids.append(entries["puuid"])
-                for entries in challenger_puuids:
-                    entries = f"{entries}\n"
-        except Exception as e:
-            print(f"{e}, try 1")
-        try:
-            with open("puuids.txt", "w+") as f:
-                as_is = f.readlines()
-                if as_is:
-                    as_is_set = set(as_is)
-                    puuids_set = set(challenger_puuids)
-                    identical_puuids_removed = puuids_set.difference(as_is_set)
-                    f.writelines(identical_puuids_removed)
-                if not as_is:
-                    for entries in challenger_puuids:
-                        f.write(f"{entries}\n")
-        except Exception as e:
-            print(f"{e}, try 2")
-        return
-    if passed == "masters":
-        try:
-            with open("masterleagues.json", "r") as f:
-                challenger = json.load(f)
-                challenger_puuids = []
-                for entries in challenger["entries"]:
-                    challenger_puuids.append(entries["puuid"])
-                for entries in challenger_puuids:
-                    entries = f"{entries}\n"
-        except Exception as e:
-            print(f"{e}, try 1")
-        try:
-            with open("puuids.txt", "w+") as f:
-                as_is = f.readlines()
-                if as_is:
-                    as_is_set = set(as_is)
-                    puuids_set = set(challenger_puuids)
-                    identical_puuids_removed = puuids_set.difference(as_is_set)
-                    f.writelines(identical_puuids_removed)
-                if not as_is:
-                    for entries in challenger_puuids:
-                        f.write(f"{entries}\n")
-        except Exception as e:
-            print(f"{e}, try 2")
-        return
-
-#extract_puuids("challenger")
-#extract_puuids("grandmaster")
-#extract_puuids("masters")
-query_summoners()
-
-#Our Outline
-
-"""Fetch Seed Players by Rank using the League-V4 endpoint, this will return a massive JSON
-    array of high-elo players containing their summonerID"""
-
-"""Convert Summoner ID to PUUID by looping through theses top players using the SUMMONER-V4 End point
-to quickly translate their summoner ID to PUUID then store these in a local SQL environment"""
-
-"""Query the MATCH-V5" endpoint for each target player. These yields a list of unique match strings"""
-
-"""When you call the specific match timeline or details endpoint, the response JSON contains the data for all 10 participants in that match
-This includes their champion played, win/loss outcome, and their respective PUUIDs"""
-
-"""From here formulate a dataframe using the data extracted from each game and slot in the data into dataframes the aggregate win/losses, builds, cspm data, etc."""
-
-#Important Info
-
-"""PUUIDs are universal and unique identifiers for my development environment, this means that for each new PUUID I find, I should store it in a file
-These PUUIDs are unique to my developer keys and thus would not be usable for any other developer."""
-
-"""We will need to use libraries that slow down the program to stop my program from exceeding queries per second limit
+Rate limits are handled by riot_client.RiotClient. Leave it to the client and
+don't add sleeps here.
 """
 
+import argparse
+import json
+import sys
+import time
+
+import requests
+
+import db
+from parse import parse_match
+from riot_client import RiotClient, RiotAuthError
+
+LEAGUE_FILES = {"CHALLENGER": "challengerleagues.json",
+                "GRANDMASTER": "grandmasterleagues.json",
+                "MASTER": "masterleagues.json"}
+LOWER_TIERS = ["IRON", "BRONZE", "SILVER", "GOLD", "PLATINUM", "EMERALD", "DIAMOND"]
+PAGE_SIZE = 205   # players per page from the league entries endpoint
 
 
+# ----------------------------------------------------------------- champions
+def update_champions(conn):
+    """Champion id -> display name from Data Dragon (Riot's static data; no API key or rate limit)."""
+    try:
+        version = requests.get("https://ddragon.leagueoflegends.com/api/versions.json", timeout=10).json()[0]
+        data = requests.get(f"https://ddragon.leagueoflegends.com/cdn/{version}/data/en_US/champion.json",
+                            timeout=10).json()["data"]
+        print(f"champions: {db.save_champions(conn, data)} (Data Dragon {version})")
+    except requests.RequestException as e:
+        print(f"couldn't reach Data Dragon ({e}); views will use API champion names")
+
+
+# ------------------------------------------------------------------ step 1
+def collect_players(client, conn, per_division=200):
+    """
+    Iron IV through Diamond I: downloads enough pages to have per_division players,
+    then marks a random per_division of them as 'sampled'.
+    Master/GM/Challenger: downloads each ladder (and saves the JSON file as before),
+    then samples per_division players from each.
+    About 31 API calls in total.
+    """
+    update_champions(conn)
+
+    for tier in LOWER_TIERS:
+        for division in ["IV", "III", "II", "I"]:
+            got, page = 0, 1
+            while got < per_division:
+                entries = client.get_league_entries(tier, division, page=page)
+                if not entries:
+                    break
+                got += db.upsert_players(conn, entries, tier)
+                if len(entries) < PAGE_SIZE:
+                    break
+                page += 1
+            n = db.sample_players(conn, tier, division, per_division)
+            print(f"{tier:<11} {division:<3} {got:>5} players downloaded, {n} sampled")
+
+    for tier in db.APEX_TIERS:
+        ladder = client.get_league(tier.lower())
+        with open(LEAGUE_FILES[tier], "w") as f:
+            json.dump(ladder, f, indent=4)
+        got = db.upsert_players(conn, ladder.get("entries", []), tier)
+        n = db.sample_players(conn, tier, "I", per_division)
+        print(f"{tier:<11} {'I':<3} {got:>5} players downloaded, {n} sampled")
+
+
+# ------------------------------------------------------------------ step 2
+def query_match_ids(client, conn, days=14, count=100, refresh_after_days=None):
+    """
+    For each sampled player, gets up to `count` ranked solo matches from the last
+    `days` days and queues them, labeled with the player's tier. Players are
+    visited tier by tier in turn, so stopping early still gives every tier some data.
+    """
+    older = refresh_after_days * 86400 if refresh_after_days else None
+    players = db.players_needing_ids(conn, older)
+    start_time = int(time.time()) - days * 86400
+    print(f"{len(players)} players to fetch match IDs for (matches since {days} days ago)")
+    total = 0
+    for i, (puuid, tier, division) in enumerate(players, 1):
+        ids = client.get_match_ids(puuid, count=count, queue=420, start_time=start_time)
+        total += db.enqueue_match_ids(conn, ids, puuid, tier, division)
+        db.mark_ids_fetched(conn, puuid)
+        conn.commit()
+        if i % 50 == 0 or i == len(players):
+            print(f"  {i}/{len(players)} players, {total} new matches queued")
+
+
+def import_match_id_file(conn, path="matchID.txt"):
+    """Loads an old matchID.txt into the queue (no tier). Mostly kept for reference."""
+    with open(path) as f:
+        added = db.enqueue_match_ids(conn, f)
+    conn.commit()
+    print(f"queued {added} new match IDs from {path}")
+
+
+# ------------------------------------------------------------------ step 3
+def fetch_matches(client, conn, limit=None, keep_raw=True, commit_every=20):
+    """
+    Downloads queued matches (taking turns across tiers), parses them, and stores
+    the rows with the seed player's tier. keep_raw=True also saves the compressed
+    full JSON (~5 KB per match) so new fields can be parsed later without the API.
+    """
+    pending = db.pending_matches(conn, limit)
+    print(f"{len(pending)} matches to download")
+    done = 0
+    for match_id, tier, division in pending:
+        raw = client.get_match(match_id)
+        parsed = parse_match(raw) if raw else None
+        if parsed is None:
+            db.set_match_status(conn, match_id, "missing")
+        else:
+            db.save_parsed_match(conn, parsed, raw if keep_raw else None, tier, division)
+            db.set_match_status(conn, match_id, "done")
+        done += 1
+        if done % commit_every == 0:
+            conn.commit()
+        if done % 100 == 0:
+            print(f"  {done}/{len(pending)} matches ({client.request_count} requests this run)")
+    conn.commit()
+    filled = db.backfill_match_tiers(conn)
+    print(f"finished {done} matches" + (f"; filled in tier for {filled} older matches" if filled else ""))
+
+
+def status(conn):
+    print(f"match queue: {db.queue_summary(conn)}")
+    rows = conn.execute("SELECT * FROM v_collection_progress").fetchall()
+    print(f"\n{'tier':<12}{'sampled':>9}{'ids done':>10}{'pending':>10}{'games':>8}")
+    for r in rows:
+        print(f"{r['tier']:<12}{r['sampled_players']:>9}{r['players_done']:>10}"
+              f"{r['matches_pending']:>10}{r['solo_games_stored']:>8}")
+
+
+# -------------------------------------------------------------------- main
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="League data collection")
+    ap.add_argument("step", choices=["players", "mark-stale", "ids", "matches", "status",
+                                     "champions", "import-ids"])
+    ap.add_argument("--per-division", type=int, default=200, help="players sampled per division (players step)")
+    ap.add_argument("--days", type=int, default=14, help="only matches from the last N days (ids step)")
+    ap.add_argument("--refresh-days", type=int, default=None,
+                    help="ids step: also re-fetch players last fetched more than N days ago")
+    ap.add_argument("--limit", type=int, default=None, help="max matches to download this run")
+    ap.add_argument("--no-raw", action="store_true", help="don't keep compressed raw match JSON")
+    ap.add_argument("--db", default="league.db")
+    args = ap.parse_args(argv)
+
+    conn = db.connect(args.db)
+    try:
+        if args.step == "status":
+            status(conn)
+        elif args.step == "mark-stale":
+            print(f"marked {db.mark_unseeded_stale(conn)} old match IDs as 'stale' (kept, but skipped)")
+        elif args.step == "champions":
+            update_champions(conn)
+        elif args.step == "import-ids":
+            import_match_id_file(conn)
+        else:
+            client = RiotClient()
+            if args.step == "players":
+                collect_players(client, conn, args.per_division)
+            elif args.step == "ids":
+                query_match_ids(client, conn, days=args.days, refresh_after_days=args.refresh_days)
+            elif args.step == "matches":
+                fetch_matches(client, conn, limit=args.limit, keep_raw=not args.no_raw)
+    except RiotAuthError as e:
+        print(f"API key rejected ({e.status}). Dev keys expire every 24h - "
+              f"get a new one at developer.riotgames.com and put it in api_key.txt.")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print("\nstopped - progress saved, run the same step again to continue")
+    finally:
+        conn.commit()
+        conn.close()
+
+
+if __name__ == "__main__":
+    main()
+
+
+# Notes
+"""PUUIDs are encrypted per Riot developer project: they keep working when you regenerate your dev key,
+but a different project (e.g. a separate production app) gets different PUUIDs.
+
+Match tier = the tier of the player whose history the match came from. Looking up all 10 players'
+ranks would cost 10x the API calls, and matchmaking keeps lobbies close in rank."""

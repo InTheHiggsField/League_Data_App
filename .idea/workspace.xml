@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43964e1f-d557-45cc-8f9a-37076f2fec6c" name="Changes" comment="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it.">
+    <list default="true" id="43964e1f-d557-45cc-8f9a-37076f2fec6c" name="Changes" comment="Added Functionality for collecting MatchIDs from PUUIDs">
+      <change afterPath="$PROJECT_DIR$/docs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data_Gather.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Gather.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_key.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api_key.txt" afterDir="false" />
@@ -52,14 +56,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-PY-252.26199.168" />
         <option value="bundled-python-sdk-b3d66beaba9a-c6efb3732140-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26199.168" />
       </set>
     </attachedChunks>
@@ -71,6 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1781070641893</updated>
+      <workItem from="1794800294814" duration="6323000" />
+      <workItem from="1794841693891" duration="25636000" />
     </task>
     <task id="LOCAL-00001" summary="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it.">
       <option name="closed" value="true" />
@@ -88,11 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1782349383990</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Functionality for collecting MatchIDs from PUUIDs">
+      <option name="closed" value="true" />
+      <created>1782408891666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782408891666</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Champion_JSON using a nested For_Loop now I can start gathering data and utilizing it." />
+    <MESSAGE value="Added Functionality for collecting MatchIDs from PUUIDs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Functionality for collecting MatchIDs from PUUIDs" />
   </component>
 </project>

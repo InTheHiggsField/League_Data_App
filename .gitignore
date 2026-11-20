@@ -1,0 +1,20 @@
+# secrets
+api_key.txt
+
+# environment / IDE
+.venv/
+venv/
+__pycache__/
+.idea/workspace.xml
+
+# collected data (large, and PUUIDs are tied to your key)
+*.db
+*.db-wal
+*.db-shm
+challengerleagues.json
+grandmasterleagues.json
+masterleagues.json
+matchID.txt
+puuids.txt
+sampleMatchV5query.txt
+Champion_stats.json
