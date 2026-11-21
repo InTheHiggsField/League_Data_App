@@ -12,6 +12,9 @@ Tables (raw data, filled in by Data_Gather.py)
   items         - every Summoner's Rift item from Data Dragon: cost, stat tags, what it builds
                   from/into, and whether it's a completed item or boots
   raw_matches   - zlib-compressed full match JSON, so new fields can be parsed later
+  timelines     - which matches have had their timeline fetched ('done' / 'missing')
+  builds        - one row per player per match from the timeline: every item purchase with
+                  its time (in order), items sold, and skill level-up order
 
 Views (readable summaries; open these in DB Browser). Every view leaves out
 remakes and only uses ranked solo/duo (queue 420). They update on their own as
@@ -24,6 +27,8 @@ new matches come in.
   v_matchup_stats_by_tier    - same, split by tier
   v_collection_progress      - how much has been collected for each tier
   v_champion_damage_profile  - champion + role: % physical / magic / true damage, healing, CC
+  v_item_purchases           - one row per completed item / boots purchase: champion, role,
+                               which number purchase it was (1st, 2nd...), minute, win
 """
 
 import json
@@ -126,6 +131,21 @@ CREATE TABLE IF NOT EXISTS items (
     is_completed  INTEGER,           -- 1 = finished item worth tracking in builds
     is_boots      INTEGER,           -- 1 = tier 2 or tier 3 boots
     patch         TEXT               -- Data Dragon version this came from
+);
+
+CREATE TABLE IF NOT EXISTS timelines (
+    match_id    TEXT PRIMARY KEY,
+    status      TEXT,                -- 'done' or 'missing'
+    fetched_at  INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS builds (
+    match_id   TEXT,
+    puuid      TEXT,
+    purchases  TEXT,                 -- JSON [[item_id, seconds], ...] in purchase order, undos removed
+    sold       TEXT,                 -- JSON [[item_id, seconds], ...]
+    skills     TEXT,                 -- skill level-up order, e.g. 'QEWQQRQWQW...'
+    PRIMARY KEY (match_id, puuid)
 );
 
 CREATE TABLE IF NOT EXISTS raw_matches (
@@ -298,12 +318,36 @@ GROUP BY p.champion_id, p.role
 ORDER BY champion, games DESC
 """,
 
+# Completed items and boots only, numbered in the order the player finished them.
+# A completed item bought twice (e.g. sold and re-bought) keeps its first purchase.
+"v_item_purchases": f"""
+WITH firsts AS (
+    SELECT b.match_id, b.puuid, CAST(json_extract(j.value, '$[0]') AS INTEGER) AS item_id,
+           MIN(CAST(json_extract(j.value, '$[1]') AS INTEGER)) AS sec
+    FROM builds b, json_each(b.purchases) j
+    GROUP BY b.match_id, b.puuid, item_id
+)
+SELECT f.match_id, m.patch, m.tier, {_NAME} AS champion, p.role,
+    ROW_NUMBER() OVER (PARTITION BY f.match_id, f.puuid ORDER BY f.sec) AS nth_item,
+    i.name AS item, f.item_id, i.is_boots,
+    ROUND(f.sec / 60.0, 1) AS minute,
+    p.win
+FROM firsts f
+JOIN items i ON i.item_id = f.item_id AND (i.is_completed = 1 OR i.is_boots = 1)
+JOIN participants p ON p.match_id = f.match_id AND p.puuid = f.puuid
+JOIN matches m ON m.match_id = f.match_id
+LEFT JOIN champions c ON c.champion_id = p.champion_id
+WHERE {_GOOD}
+""",
+
 "v_collection_progress": """
 SELECT t.tier,
     (SELECT COUNT(*) FROM players WHERE tier = t.tier AND sampled = 1) AS sampled_players,
     (SELECT COUNT(*) FROM players WHERE tier = t.tier AND sampled = 1 AND ids_fetched_at IS NOT NULL) AS players_done,
     (SELECT COUNT(*) FROM match_queue WHERE seed_tier = t.tier AND status = 'pending') AS matches_pending,
-    (SELECT COUNT(*) FROM matches WHERE tier = t.tier AND is_remake = 0 AND queue_id = 420) AS solo_games_stored
+    (SELECT COUNT(*) FROM matches WHERE tier = t.tier AND is_remake = 0 AND queue_id = 420) AS solo_games_stored,
+    (SELECT COUNT(*) FROM matches m JOIN timelines tl ON tl.match_id = m.match_id
+     WHERE m.tier = t.tier AND tl.status = 'done' AND m.is_remake = 0 AND m.queue_id = 420) AS with_timeline
 FROM (SELECT DISTINCT tier FROM players WHERE tier IS NOT NULL
       UNION SELECT DISTINCT tier FROM matches WHERE tier IS NOT NULL) t
 ORDER BY CASE t.tier """ + " ".join(f"WHEN '{tr}' THEN {i}" for i, tr in enumerate(TIER_ORDER)) + " END",
@@ -404,6 +448,33 @@ def backfill_damage(conn, batch=1000):
         done += len(todo[i:i + batch])
         print(f"  {done}/{len(todo)} matches")
     return done
+
+
+# ---------------------------------------------------------------- timelines
+def save_timeline(conn, match_id, builds):
+    """builds = parse.parse_timeline() output, or None if the timeline was missing/unusable."""
+    conn.execute("DELETE FROM builds WHERE match_id=?", (match_id,))
+    if builds:
+        conn.executemany("INSERT INTO builds (match_id, puuid, purchases, sold, skills) VALUES (?,?,?,?,?)",
+                         [(match_id, b["puuid"], json.dumps(b["purchases"], separators=(",", ":")),
+                           json.dumps(b["sold"], separators=(",", ":")), b["skills"]) for b in builds])
+    conn.execute("INSERT OR REPLACE INTO timelines (match_id, status, fetched_at) VALUES (?,?,?)",
+                 (match_id, "done" if builds else "missing", int(time.time())))
+
+
+def matches_needing_timelines(conn, limit=None):
+    """
+    Stored real games (ranked solo, no remakes) without a timeline yet: newest first
+    within each tier and alternating between tiers, like the match download.
+    """
+    q = """SELECT match_id FROM (
+               SELECT m.match_id, ROW_NUMBER() OVER (PARTITION BY m.tier ORDER BY m.game_creation DESC) AS rn, m.tier
+               FROM matches m LEFT JOIN timelines t ON t.match_id = m.match_id
+               WHERE t.match_id IS NULL AND m.is_remake = 0 AND m.queue_id = 420)
+           ORDER BY rn, tier"""
+    if limit:
+        q += f" LIMIT {int(limit)}"
+    return [r[0] for r in conn.execute(q)]
 
 
 # ---------------------------------------------------------------- players

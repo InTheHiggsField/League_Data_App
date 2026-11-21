@@ -5,12 +5,13 @@ without losing progress or wasting API calls.
     python Data_Gather.py players                 # 1. sample ~200 players from every division, Iron IV -> Challenger
     python Data_Gather.py mark-stale              #    (once) skip the old June match IDs that have no tier
     python Data_Gather.py ids                     # 2. last 14 days of solo-queue match IDs for each sampled player
-    python Data_Gather.py matches --limit 3000    # 3. download + parse queued matches, taking turns across tiers
+    python Data_Gather.py matches --limit 3000    # 3. download + parse queued matches (and their timelines)
+    python Data_Gather.py timelines --limit 3000  #    timelines for matches stored before timelines were collected
     python Data_Gather.py status                  # progress per tier
     python Data_Gather.py items                   # item list from Data Dragon -> items table (no API key)
     python Data_Gather.py backfill-damage         # damage columns for stored matches, from raw JSON (no API)
 
-Options: players --per-division 200 | ids --days 14 | matches --limit N --no-raw
+Options: players --per-division 200 | ids --days 14 | matches --limit N --no-raw --no-timelines
 
 In PyCharm, put the step and options (e.g. `matches --limit 3000`) in the
 Run Configuration's "Parameters" field.
@@ -27,7 +28,7 @@ import time
 import requests
 
 import db
-from parse import parse_match
+from parse import parse_match, parse_timeline
 from riot_client import RiotClient, RiotAuthError
 
 LEAGUE_FILES = {"CHALLENGER": "challengerleagues.json",
@@ -125,11 +126,18 @@ def import_match_id_file(conn, path="matchID.txt"):
 
 
 # ------------------------------------------------------------------ step 3
-def fetch_matches(client, conn, limit=None, keep_raw=True, commit_every=20):
+def fetch_timeline(client, conn, match_id):
+    """One timeline call; stores purchase order, sales and skill order for all 10 players."""
+    db.save_timeline(conn, match_id, parse_timeline(client.get_timeline(match_id)))
+
+
+def fetch_matches(client, conn, limit=None, keep_raw=True, timelines=True, commit_every=20):
     """
     Downloads queued matches (taking turns across tiers), parses them, and stores
     the rows with the seed player's tier. keep_raw=True also saves the compressed
-    full JSON (~5 KB per match) so new fields can be parsed later without the API.
+    full JSON (~5-12 KB per match) so new fields can be parsed later without the API.
+    timelines=True also fetches each real game's timeline (build order): one extra
+    API call per match, so about half as many matches per hour. Remakes are skipped.
     """
     pending = db.pending_matches(conn, limit)
     print(f"{len(pending)} matches to download")
@@ -142,6 +150,9 @@ def fetch_matches(client, conn, limit=None, keep_raw=True, commit_every=20):
         else:
             db.save_parsed_match(conn, parsed, raw if keep_raw else None, tier, division)
             db.set_match_status(conn, match_id, "done")
+            m = parsed["match"]
+            if timelines and not m["is_remake"] and m["queue_id"] == 420:
+                fetch_timeline(client, conn, match_id)
         done += 1
         if done % commit_every == 0:
             conn.commit()
@@ -152,26 +163,42 @@ def fetch_matches(client, conn, limit=None, keep_raw=True, commit_every=20):
     print(f"finished {done} matches" + (f"; filled in tier for {filled} older matches" if filled else ""))
 
 
+def backfill_timelines(client, conn, limit=None, commit_every=20):
+    """Timelines for matches that were stored before timeline collection existed."""
+    todo = db.matches_needing_timelines(conn, limit)
+    print(f"{len(todo)} matches need a timeline")
+    for i, match_id in enumerate(todo, 1):
+        fetch_timeline(client, conn, match_id)
+        if i % commit_every == 0:
+            conn.commit()
+        if i % 100 == 0:
+            print(f"  {i}/{len(todo)} timelines ({client.request_count} requests this run)")
+    conn.commit()
+    print(f"finished {len(todo)} timelines")
+
+
 def status(conn):
     print(f"match queue: {db.queue_summary(conn)}")
     rows = conn.execute("SELECT * FROM v_collection_progress").fetchall()
-    print(f"\n{'tier':<12}{'sampled':>9}{'ids done':>10}{'pending':>10}{'games':>8}")
+    print(f"\n{'tier':<12}{'sampled':>9}{'ids done':>10}{'pending':>10}{'games':>8}{'timelines':>11}")
     for r in rows:
         print(f"{r['tier']:<12}{r['sampled_players']:>9}{r['players_done']:>10}"
-              f"{r['matches_pending']:>10}{r['solo_games_stored']:>8}")
+              f"{r['matches_pending']:>10}{r['solo_games_stored']:>8}{r['with_timeline']:>11}")
 
 
 # -------------------------------------------------------------------- main
 def main(argv=None):
     ap = argparse.ArgumentParser(description="League data collection")
     ap.add_argument("step", choices=["players", "mark-stale", "ids", "matches", "status",
-                                     "champions", "items", "backfill-damage", "import-ids"])
+                                     "champions", "items", "backfill-damage", "timelines", "import-ids"])
     ap.add_argument("--per-division", type=int, default=200, help="players sampled per division (players step)")
     ap.add_argument("--days", type=int, default=14, help="only matches from the last N days (ids step)")
     ap.add_argument("--refresh-days", type=int, default=None,
                     help="ids step: also re-fetch players last fetched more than N days ago")
     ap.add_argument("--limit", type=int, default=None, help="max matches to download this run")
     ap.add_argument("--no-raw", action="store_true", help="don't keep compressed raw match JSON")
+    ap.add_argument("--no-timelines", action="store_true",
+                    help="matches step: skip timelines (twice as many matches per hour, but no build order)")
     ap.add_argument("--db", default="league.db")
     args = ap.parse_args(argv)
 
@@ -196,7 +223,10 @@ def main(argv=None):
             elif args.step == "ids":
                 query_match_ids(client, conn, days=args.days, refresh_after_days=args.refresh_days)
             elif args.step == "matches":
-                fetch_matches(client, conn, limit=args.limit, keep_raw=not args.no_raw)
+                fetch_matches(client, conn, limit=args.limit, keep_raw=not args.no_raw,
+                              timelines=not args.no_timelines)
+            elif args.step == "timelines":
+                backfill_timelines(client, conn, limit=args.limit)
     except RiotAuthError as e:
         print(f"API key rejected ({e.status}). Dev keys expire every 24h - "
               f"get a new one at developer.riotgames.com and put it in api_key.txt.")

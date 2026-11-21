@@ -135,3 +135,68 @@ def parse_match(match_json):
                              "champion_id": b["championId"], "pick_turn": b.get("pickTurn")})
 
     return {"match": match, "participants": rows, "bans": bans}
+
+
+# ----------------------------------------------------------------- timelines
+SKILL_KEYS = {1: "Q", 2: "W", 3: "E", 4: "R"}
+
+
+def parse_timeline(timeline_json):
+    """
+    Turns a Match-V5 timeline (GET /lol/match/v5/matches/{matchId}/timeline) into
+    one build record per player:
+
+        {"puuid": ..., "purchases": [[item_id, seconds], ...],   # in order, undos removed
+                       "sold":      [[item_id, seconds], ...],
+                       "skills":    "QWEQQRQEQE..."}             # skill level-up order
+
+    The timeline is a list of one-minute frames, each with a list of events. We use:
+      ITEM_PURCHASED  {participantId, itemId, timestamp}
+      ITEM_SOLD       {participantId, itemId, timestamp}
+      ITEM_UNDO       {participantId, beforeId, afterId}  beforeId = purchase undone,
+                                                          afterId  = sale undone
+      SKILL_LEVEL_UP  {participantId, skillSlot 1-4, levelUpType}
+    Returns None if the JSON isn't a usable timeline.
+    """
+    if not timeline_json or "info" not in timeline_json:
+        return None
+    info = timeline_json["info"]
+
+    # participantId (1-10) -> puuid
+    ids = {}
+    for p in info.get("participants") or []:
+        ids[p["participantId"]] = p.get("puuid")
+    if not ids:
+        for i, puuid in enumerate(timeline_json.get("metadata", {}).get("participants", []), 1):
+            ids[i] = puuid
+    if len(ids) != 10:
+        return None
+
+    builds = {pid: {"puuid": puuid, "purchases": [], "sold": [], "skills": ""} for pid, puuid in ids.items()}
+
+    def remove_last(lst, item_id):
+        for i in range(len(lst) - 1, -1, -1):
+            if lst[i][0] == item_id:
+                del lst[i]
+                return
+
+    for frame in info.get("frames", []):
+        for e in frame.get("events", []):
+            b = builds.get(e.get("participantId"))
+            if b is None:
+                continue
+            t = e.get("type")
+            sec = int(e.get("timestamp", 0) / 1000)
+            if t == "ITEM_PURCHASED":
+                b["purchases"].append([e.get("itemId"), sec])
+            elif t == "ITEM_SOLD":
+                b["sold"].append([e.get("itemId"), sec])
+            elif t == "ITEM_UNDO":
+                if e.get("beforeId"):            # undid a purchase
+                    remove_last(b["purchases"], e["beforeId"])
+                if e.get("afterId"):             # undid a sale
+                    remove_last(b["sold"], e["afterId"])
+            elif t == "SKILL_LEVEL_UP" and e.get("levelUpType", "NORMAL") == "NORMAL":
+                b["skills"] += SKILL_KEYS.get(e.get("skillSlot"), "?")
+
+    return list(builds.values())
