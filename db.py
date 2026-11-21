@@ -9,6 +9,8 @@ Tables (raw data, filled in by Data_Gather.py)
   participants  - one row per player per match (10 per match)
   bans          - one row per ban
   champions     - champion id -> display name (from Data Dragon), e.g. 62 -> 'Wukong'
+  items         - every Summoner's Rift item from Data Dragon: cost, stat tags, what it builds
+                  from/into, and whether it's a completed item or boots
   raw_matches   - zlib-compressed full match JSON, so new fields can be parsed later
 
 Views (readable summaries; open these in DB Browser). Every view leaves out
@@ -21,6 +23,7 @@ new matches come in.
   v_matchup_stats            - champion vs lane opponent: games, winrate %
   v_matchup_stats_by_tier    - same, split by tier
   v_collection_progress      - how much has been collected for each tier
+  v_champion_damage_profile  - champion + role: % physical / magic / true damage, healing, CC
 """
 
 import json
@@ -91,6 +94,11 @@ CREATE TABLE IF NOT EXISTS participants (
     items            TEXT,
     summoner1        INTEGER,
     summoner2        INTEGER,
+    phys_dmg         INTEGER,        -- damage dealt to champions, by type
+    magic_dmg        INTEGER,
+    true_dmg         INTEGER,
+    total_heal       INTEGER,
+    cc_time          INTEGER,        -- seconds of crowd control applied to enemies
     PRIMARY KEY (match_id, puuid)
 );
 
@@ -107,6 +115,19 @@ CREATE TABLE IF NOT EXISTS champions (
     api_name     TEXT                   -- name used in match data, e.g. 'MonkeyKing'
 );
 
+CREATE TABLE IF NOT EXISTS items (
+    item_id       INTEGER PRIMARY KEY,
+    name          TEXT,
+    gold_total    INTEGER,
+    tags          TEXT,              -- JSON list, e.g. ["SpellDamage", "Armor"]
+    builds_from   TEXT,              -- JSON list of item ids
+    builds_into   TEXT,              -- JSON list of item ids
+    depth         INTEGER,           -- 1 = basic, 2-3 = built from components
+    is_completed  INTEGER,           -- 1 = finished item worth tracking in builds
+    is_boots      INTEGER,           -- 1 = tier 2 or tier 3 boots
+    patch         TEXT               -- Data Dragon version this came from
+);
+
 CREATE TABLE IF NOT EXISTS raw_matches (
     match_id  TEXT PRIMARY KEY,
     data      BLOB
@@ -118,6 +139,8 @@ MIGRATIONS = {
     "players": [("division", "TEXT"), ("sampled", "INTEGER DEFAULT 0")],
     "match_queue": [("seed_puuid", "TEXT"), ("seed_tier", "TEXT"), ("seed_division", "TEXT")],
     "matches": [("tier", "TEXT"), ("division", "TEXT")],
+    "participants": [("phys_dmg", "INTEGER"), ("magic_dmg", "INTEGER"), ("true_dmg", "INTEGER"),
+                     ("total_heal", "INTEGER"), ("cc_time", "INTEGER")],
 }
 
 INDEXES = """
@@ -256,6 +279,25 @@ GROUP BY m.tier, p.champion_id, p.role, o.champion_id
 ORDER BY {_TIER_SORT}, champion, p.role, games DESC
 """,
 
+# Average damage split per champion + role. Uses damage dealt to champions only, so
+# building/objective damage doesn't skew it. Rows not yet backfilled (NULL) are skipped.
+"v_champion_damage_profile": f"""
+SELECT {_NAME} AS champion, p.role,
+    COUNT(*) AS games,
+    ROUND(100.0 * SUM(p.phys_dmg)  / MAX(SUM(p.phys_dmg + p.magic_dmg + p.true_dmg), 1), 1) AS physical_pct,
+    ROUND(100.0 * SUM(p.magic_dmg) / MAX(SUM(p.phys_dmg + p.magic_dmg + p.true_dmg), 1), 1) AS magic_pct,
+    ROUND(100.0 * SUM(p.true_dmg)  / MAX(SUM(p.phys_dmg + p.magic_dmg + p.true_dmg), 1), 1) AS true_pct,
+    ROUND(AVG((p.phys_dmg + p.magic_dmg + p.true_dmg) * 60.0 / m.game_duration), 0) AS dmg_per_min,
+    ROUND(AVG(p.total_heal * 60.0 / m.game_duration), 0) AS heal_per_min,
+    ROUND(AVG(p.cc_time * 60.0 / m.game_duration), 2) AS cc_sec_per_min
+FROM participants p
+JOIN matches m ON m.match_id = p.match_id
+LEFT JOIN champions c ON c.champion_id = p.champion_id
+WHERE {_GOOD} AND p.role IS NOT NULL AND p.phys_dmg IS NOT NULL
+GROUP BY p.champion_id, p.role
+ORDER BY champion, games DESC
+""",
+
 "v_collection_progress": """
 SELECT t.tier,
     (SELECT COUNT(*) FROM players WHERE tier = t.tier AND sampled = 1) AS sampled_players,
@@ -302,6 +344,66 @@ def save_champions(conn, ddragon_data):
     conn.executemany("INSERT OR REPLACE INTO champions (champion_id, name, api_name) VALUES (?,?,?)", rows)
     conn.commit()
     return len(rows)
+
+
+# -------------------------------------------------------------------- items
+def save_items(conn, ddragon_items, version):
+    """
+    ddragon_items = the 'data' dict from Data Dragon's item.json.
+    Keeps only items sold on Summoner's Rift (map 11) and labels them:
+      is_boots     - tier 2/3 boots (Boots tag, built from basic Boots)
+      is_completed - a finished item: nothing builds out of it, costs 2000+ gold, not a
+                     consumable/trinket, and not a champion-specific item (e.g. Ornn upgrades)
+    The raw cost, tags and recipe are stored too, so these labels can be refined later.
+    """
+    rows = []
+    for key, it in ddragon_items.items():
+        gold = it.get("gold", {})
+        tags = it.get("tags", [])
+        if not it.get("maps", {}).get("11") or not gold.get("purchasable") or it.get("inStore") is False:
+            continue
+        if int(key) >= 100000:   # 6-digit ids are copies for other game modes (e.g. 326617 = Moonstone Renewer)
+            continue
+        special = it.get("requiredChampion") or it.get("requiredAlly")
+        is_boots = "Boots" in tags and (it.get("depth") or 1) >= 2
+        is_completed = (not it.get("into") and gold.get("total", 0) >= 2000 and not special
+                        and "Consumable" not in tags and "Trinket" not in tags)
+        rows.append((int(key), it.get("name"), gold.get("total"), json.dumps(tags),
+                     json.dumps([int(x) for x in it.get("from", [])]),
+                     json.dumps([int(x) for x in it.get("into", [])]),
+                     it.get("depth") or 1, int(is_completed), int(is_boots), version))
+    conn.execute("DELETE FROM items")
+    conn.executemany("INSERT INTO items VALUES (?,?,?,?,?,?,?,?,?,?)", rows)
+    conn.commit()
+    return len(rows), sum(r[7] for r in rows), sum(r[8] for r in rows)
+
+
+def backfill_damage(conn, batch=1000):
+    """
+    Fills the damage columns for matches stored before they existed, by re-reading
+    the compressed raw match JSON. No API calls. Safe to stop and re-run: it only
+    touches matches that still have NULL damage values.
+    """
+    from parse import damage_fields
+    todo = [r[0] for r in conn.execute(
+        "SELECT DISTINCT match_id FROM participants WHERE phys_dmg IS NULL")]
+    have_raw = {r[0] for r in conn.execute("SELECT match_id FROM raw_matches")}
+    todo = [m for m in todo if m in have_raw]
+    done = 0
+    for i in range(0, len(todo), batch):
+        rows = []
+        for match_id in todo[i:i + batch]:
+            raw = load_raw_match(conn, match_id)
+            for p in raw["info"]["participants"]:
+                f = damage_fields(p)
+                rows.append((f["phys_dmg"], f["magic_dmg"], f["true_dmg"], f["total_heal"], f["cc_time"],
+                             match_id, p.get("puuid")))
+        conn.executemany("""UPDATE participants SET phys_dmg=?, magic_dmg=?, true_dmg=?, total_heal=?, cc_time=?
+                            WHERE match_id=? AND puuid=?""", rows)
+        conn.commit()
+        done += len(todo[i:i + batch])
+        print(f"  {done}/{len(todo)} matches")
+    return done
 
 
 # ---------------------------------------------------------------- players
@@ -431,10 +533,11 @@ def save_parsed_match(conn, parsed, raw=None, tier=None, division=None):
     conn.executemany("""INSERT INTO participants
         (match_id, puuid, team_id, champion_id, champion_name, champion_key, role, opponent_name, opponent_key,
          win, kills, deaths, assists, cs, gold, damage_to_champs, damage_taken, vision_score, champ_level,
-         items, summoner1, summoner2)
+         items, summoner1, summoner2, phys_dmg, magic_dmg, true_dmg, total_heal, cc_time)
         VALUES (:match_id,:puuid,:team_id,:champion_id,:champion_name,:champion_key,:role,:opponent_name,:opponent_key,
                 :win,:kills,:deaths,:assists,:cs,:gold,:damage_to_champs,:damage_taken,:vision_score,:champ_level,
-                :items,:summoner1,:summoner2)""", parsed["participants"])
+                :items,:summoner1,:summoner2,:phys_dmg,:magic_dmg,:true_dmg,:total_heal,:cc_time)""",
+        parsed["participants"])
     conn.execute("DELETE FROM bans WHERE match_id=?", (m["match_id"],))
     conn.executemany("INSERT INTO bans (match_id, team_id, champion_id, pick_turn) "
                      "VALUES (:match_id,:team_id,:champion_id,:pick_turn)", parsed["bans"])

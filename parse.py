@@ -46,6 +46,23 @@ def is_remake(info):
     return any(p.get("gameEndedInEarlySurrender") for p in info.get("participants", []))
 
 
+def damage_fields(p):
+    """
+    Damage-profile fields for one participant (one entry of info.participants).
+    Used for new matches and by db.backfill_damage() for matches already stored.
+      phys_dmg / magic_dmg / true_dmg - damage dealt to champions, by type
+      total_heal                      - healing done (relevant to anti-heal items)
+      cc_time                         - seconds spent crowd-controlling enemies (relevant to tenacity)
+    """
+    return {
+        "phys_dmg": p.get("physicalDamageDealtToChampions", 0),
+        "magic_dmg": p.get("magicDamageDealtToChampions", 0),
+        "true_dmg": p.get("trueDamageDealtToChampions", 0),
+        "total_heal": p.get("totalHeal", 0),
+        "cc_time": p.get("timeCCingOthers", 0),
+    }
+
+
 def parse_match(match_json):
     """
     Returns {"match": {...}, "participants": [10 dicts], "bans": [...]},
@@ -107,6 +124,7 @@ def parse_match(match_json):
             "items": json.dumps([p.get(f"item{i}", 0) for i in range(7)]),
             "summoner1": p.get("summoner1Id"),
             "summoner2": p.get("summoner2Id"),
+            **damage_fields(p),
         })
 
     bans = []

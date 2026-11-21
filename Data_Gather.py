@@ -7,6 +7,8 @@ without losing progress or wasting API calls.
     python Data_Gather.py ids                     # 2. last 14 days of solo-queue match IDs for each sampled player
     python Data_Gather.py matches --limit 3000    # 3. download + parse queued matches, taking turns across tiers
     python Data_Gather.py status                  # progress per tier
+    python Data_Gather.py items                   # item list from Data Dragon -> items table (no API key)
+    python Data_Gather.py backfill-damage         # damage columns for stored matches, from raw JSON (no API)
 
 Options: players --per-division 200 | ids --days 14 | matches --limit N --no-raw
 
@@ -45,6 +47,18 @@ def update_champions(conn):
         print(f"champions: {db.save_champions(conn, data)} (Data Dragon {version})")
     except requests.RequestException as e:
         print(f"couldn't reach Data Dragon ({e}); views will use API champion names")
+
+
+def update_items(conn):
+    """Item list from Data Dragon (Riot's static data; no API key or rate limit)."""
+    try:
+        version = requests.get("https://ddragon.leagueoflegends.com/api/versions.json", timeout=10).json()[0]
+        data = requests.get(f"https://ddragon.leagueoflegends.com/cdn/{version}/data/en_US/item.json",
+                            timeout=10).json()["data"]
+        total, completed, boots = db.save_items(conn, data, version)
+        print(f"items: {total} on Summoner's Rift ({completed} completed, {boots} boots) - Data Dragon {version}")
+    except requests.RequestException as e:
+        print(f"couldn't reach Data Dragon ({e})")
 
 
 # ------------------------------------------------------------------ step 1
@@ -151,7 +165,7 @@ def status(conn):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="League data collection")
     ap.add_argument("step", choices=["players", "mark-stale", "ids", "matches", "status",
-                                     "champions", "import-ids"])
+                                     "champions", "items", "backfill-damage", "import-ids"])
     ap.add_argument("--per-division", type=int, default=200, help="players sampled per division (players step)")
     ap.add_argument("--days", type=int, default=14, help="only matches from the last N days (ids step)")
     ap.add_argument("--refresh-days", type=int, default=None,
@@ -169,6 +183,10 @@ def main(argv=None):
             print(f"marked {db.mark_unseeded_stale(conn)} old match IDs as 'stale' (kept, but skipped)")
         elif args.step == "champions":
             update_champions(conn)
+        elif args.step == "items":
+            update_items(conn)
+        elif args.step == "backfill-damage":
+            print(f"backfilled damage for {db.backfill_damage(conn)} matches")
         elif args.step == "import-ids":
             import_match_id_file(conn)
         else:
