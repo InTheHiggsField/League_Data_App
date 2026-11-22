@@ -391,3 +391,119 @@ td .badge.best { margin-left: 6px; }
   .mode-buttons { width: 100%; }
   th, td { padding: 7px 8px; }
 }
+
+/* ======================================================= champion profile */
+a.champ-link, a.plain-link { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 12px; }
+a.champ-link:hover .name, a.plain-link:hover { text-decoration: underline; text-decoration-color: var(--gold-2); }
+a.chip { text-decoration: none; }
+a.chip:hover { filter: brightness(1.06); border-color: #6b4a1f; }
+
+.back-link {
+  background: none; border: none; padding: 0; margin: 0 0 12px; cursor: pointer;
+  font: 15px var(--serif); color: var(--ink-title);
+}
+.back-link:hover { text-decoration: underline; }
+
+/* dark framed header plate */
+.profile-head {
+  display: flex; gap: 18px; align-items: center; padding: 14px 16px; margin-bottom: 18px;
+  background: linear-gradient(var(--steel-2), var(--steel-1));
+  border: 2px solid #3d2a14; border-radius: 3px;
+  box-shadow: inset 0 0 0 1px var(--steel-edge), 0 3px 8px rgba(40, 20, 0, .45);
+  color: #dbe6f7;
+}
+.profile-head .title { font: 28px var(--serif); color: var(--gold-1); }
+.profile-head img { width: 64px; height: 64px; border: 2px solid #c9a86c; border-radius: 2px; }
+.portrait img { width: 96px; height: 96px; box-shadow: 0 0 10px rgba(0, 0, 0, .8); }
+.head-main { display: grid; gap: 8px; min-width: 0; }
+.role-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.role-pill {
+  font: 13px var(--serif); color: #c9d6ee; text-decoration: none; padding: 2px 10px;
+  border: 1px solid var(--steel-edge); border-radius: 3px; background: rgba(255, 255, 255, .04);
+}
+.role-pill.on { color: #3b2404; border-color: var(--gold-3); background: linear-gradient(var(--gold-1), var(--gold-2)); }
+.stat-row { display: flex; gap: 22px; flex-wrap: wrap; }
+.stat { display: grid; }
+.stat-val { font: 20px var(--serif); color: #fff; }
+.stat-val.good { color: #6fd36f; } .stat-val.bad { color: #ff7a6b; }
+.stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: .6px; color: #8fa2c4; }
+
+/* damage profile bar */
+.dmg-bar {
+  display: flex; height: 18px; max-width: 620px; overflow: hidden;
+  border: 2px solid #3d2a14; border-radius: 3px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, .4);
+}
+.dmg { display: block; height: 100%; }
+.dmg.phys, .sw.phys { background: linear-gradient(#e0743a, #a8401a); }
+.dmg.magic, .sw.magic { background: linear-gradient(#5d8fe6, #2a52a8); }
+.dmg.true, .sw.true { background: linear-gradient(#ffffff, #c9c9c9); }
+.dmg-legend { display: flex; gap: 18px; margin: 6px 0 4px; font-size: 13px; color: var(--ink); }
+.sw { display: inline-block; width: 11px; height: 11px; margin-right: 5px; border: 1px solid #3d2a14; vertical-align: -1px; }
+
+/* build tabs */
+.build-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 14px; }
+a.glossy { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.glossy.small { min-width: 0; padding: 6px 14px; font-size: 15px; }
+.glossy.on {
+  background: linear-gradient(#ffc163 0%, #f08a1c 48%, #d86a08 52%, #ec8016 100%);
+  border-color: #6b3204; text-shadow: 0 1px 2px #5a2400;
+}
+.glossy .count { font: 12px var(--sans); padding: 0 6px; border-radius: 8px; background: rgba(0, 0, 0, .28); }
+
+.build-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.build-block {
+  padding: 10px 12px;
+  background: linear-gradient(#f7ebca, #ead7a6);
+  border: 2px solid #3d2a14; border-radius: 3px;
+  box-shadow: 0 0 0 1px #b8995e, inset 0 0 10px rgba(80, 50, 15, .25);
+}
+.build-block.wide { grid-column: 1 / -1; }
+.build-block .field-label { font-size: 15px; color: var(--ink-title); margin-bottom: 6px; }
+
+.item-icon {
+  width: 34px; height: 34px; flex: none; vertical-align: middle;
+  border: 2px solid #2a1c0d; border-radius: 2px; background: #3a2a18;
+  box-shadow: 0 0 0 1px #c9a86c;
+}
+.item-icon.big { width: 52px; height: 52px; }
+.start-row { display: flex; align-items: center; gap: 5px; margin-bottom: 6px; flex-wrap: wrap; }
+.slot-item { display: flex; align-items: center; gap: 9px; margin-bottom: 7px; }
+.slot-item .small { line-height: 1.25; }
+
+.path { display: flex; align-items: flex-start; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.path-step { display: grid; justify-items: center; text-align: center; width: 120px; gap: 2px; }
+.step-name { font: 14px var(--serif); color: #3a230d; line-height: 1.2; }
+.arrow { font: 30px var(--serif); color: var(--ink-soft); align-self: center; margin-top: -18px; }
+.arrow.sm { font-size: 18px; margin: 0 2px; vertical-align: middle; }
+.alt-path { display: flex; align-items: center; gap: 4px; margin-top: 8px; }
+.alt-path .muted { margin-left: 8px; }
+
+.slot-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-bottom: 6px; }
+
+.skills { display: flex; align-items: center; gap: 2px; margin: 2px 0 4px; }
+.keycap {
+  display: inline-grid; place-items: center; width: 30px; height: 30px;
+  font: 17px var(--serif); color: #3b2404;
+  background: linear-gradient(var(--gold-1), var(--gold-2) 60%, #b98522);
+  border: 1px solid var(--gold-3); border-radius: 4px;
+  box-shadow: inset 0 1px 0 #fff8d6, 0 2px 0 #6b4a12;
+}
+.small-keys .keycap { width: 22px; height: 22px; font-size: 13px; margin-right: 3px; }
+
+.mu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.mu-grid .field-label { margin-bottom: 6px; }
+code { font-size: 13px; background: rgba(0, 0, 0, .07); padding: 1px 4px; border-radius: 3px; }
+
+@media (max-width: 720px) {
+  .profile-head { flex-direction: column; text-align: center; }
+  .role-pills, .stat-row { justify-content: center; }
+  .build-grid { grid-template-columns: 1fr; }
+  .slot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mu-grid { grid-template-columns: 1fr; }
+  .path-step { width: 90px; }
+}
+
+@media (max-width: 720px) {
+  .build-tabs { display: grid; grid-template-columns: 1fr 1fr; }
+  .build-tabs .glossy { justify-content: center; white-space: nowrap; font-size: 14px; padding: 7px 6px; }
+}
