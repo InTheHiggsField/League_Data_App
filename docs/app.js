@@ -19,6 +19,8 @@
   // First picks must have at least this winrate. 0.48 rather than 0.5, because some
   // safe blind picks sit just under 50% because of who plays them (e.g. Ahri at 49.8%).
   const MIN_BLIND_WR = 0.48;
+  // How many champions per role get the "Best pick" badge (highest bad-matchup winrate).
+  const BEST_PICKS = 5;
   const ROLES = [["top", "Top"], ["jungle", "Jungle"], ["mid", "Mid"], ["bot", "Bot"], ["support", "Support"]];
   const T = D ? D.thresholds : {};
   const $ = (id) => document.getElementById(id);
@@ -32,7 +34,7 @@
   // Kept in the URL (#role=mid&tier=all&mode=counter&enemy=238, or ...&champ=103 for a
   // champion profile) so a view can be bookmarked, shared, and reached with the back button.
   const COMPS = [["gen", "General"], ["ad", "vs AD-heavy"], ["ap", "vs AP-heavy"], ["mixed", "vs Mixed"]];
-  const state = { role: "mid", tier: "all", mode: "first", enemy: null, champ: null, comp: "gen" };
+  const state = { role: "mid", tier: "all", mode: "first", enemy: null, champ: null, comp: "gen", bestFirst: false };
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     if (ROLES.some(([r]) => r === h.get("role"))) state.role = h.get("role");
@@ -41,11 +43,13 @@
     state.enemy = h.get("enemy") ? Number(h.get("enemy")) : null;
     state.champ = h.get("champ") ? Number(h.get("champ")) : null;
     state.comp = COMPS.some(([c]) => c === h.get("comp")) ? h.get("comp") : "gen";
+    state.bestFirst = h.get("sort") === "best";
   }
   function hashFor(extra = {}) {
     const s = { ...state, ...extra };
     const h = new URLSearchParams({ role: s.role, tier: s.tier, mode: s.mode });
     if (s.enemy) h.set("enemy", s.enemy);
+    if (s.bestFirst) h.set("sort", "best");
     if (s.champ) { h.set("champ", s.champ); if (s.comp !== "gen") h.set("comp", s.comp); }
     return "#" + h.toString();
   }
@@ -66,6 +70,14 @@
     return `<img alt="" loading="lazy" src="https://ddragon.leagueoflegends.com/cdn/${ddVersion}/img/champion/${encodeURIComponent(c.api)}.png" onerror="this.style.visibility='hidden'">`;
   }
   function wrClass(wr) { return wr >= 0.5 ? "good" : "bad"; }
+
+  // Standard normal CDF (Abramowitz & Stegun 7.1.26 approximation of erf).
+  function normCdf(x) {
+    const t = 1 / (1 + 0.3275911 * Math.abs(x) / Math.SQRT2);
+    const y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t
+      * Math.exp(-x * x / 2);
+    return x >= 0 ? (1 + y) / 2 : (1 - y) / 2;
+  }
 
   // 95% range for a winrate (Wilson interval), shown as a tooltip.
   function wilson(wins, games) {
@@ -105,13 +117,25 @@
     const pool = [...combos.values()].filter((c) => c.wr > MIN_BLIND_WR && c.safe != null);
     const hidden = combos.size - pool.length;
 
-    // Lowest conservative spread first; ties go to the higher winrate.
-    pool.sort((a, b) => a.safe - b.safe || b.wr - a.wr);
-
-    // "Best pick": nobody else is at least as good on both and strictly better on one (Pareto front).
+    // Where the spread sits, not just how wide it is:
+    //   floor = winrate - spread: roughly the winrate in one of its harder matchups (about
+    //           the worst sixth), so a high winrate and a low spread both push it up.
+    //   fav   = share of matchups expected to be above 50%, treating matchup winrates as
+    //           spread out around the champion's winrate (normal curve, width = spread).
     for (const c of pool) {
-      c.best = !pool.some((o) => o !== c && o.wr >= c.wr && o.safe <= c.safe && (o.wr > c.wr || o.safe < c.safe));
+      c.floor = c.wr - c.safe;
+      c.fav = c.safe > 0 ? normCdf((c.wr - 0.5) / c.safe) : (c.wr > 0.5 ? 1 : 0);
     }
+    // "Best pick": the BEST_PICKS champions with the highest bad-matchup winrate.
+    const bestIds = new Set([...pool].sort((a, b) => b.floor - a.floor).slice(0, BEST_PICKS).map((c) => c.id));
+    for (const c of pool) c.best = bestIds.has(c.id);
+
+    // Default: lowest conservative spread first (ties: higher winrate).
+    // "Best picks first": highest bad-matchup winrate first.
+    if (state.bestFirst) pool.sort((a, b) => b.floor - a.floor);
+    else pool.sort((a, b) => a.safe - b.safe || b.wr - a.wr);
+    $("best-toggle").setAttribute("aria-pressed", state.bestFirst);
+    $("best-toggle").textContent = state.bestFirst ? "★ Best picks first (on)" : "★ Show best picks first";
 
     const rows = pool.map((c, i) => {
       const worst = matchups.filter((m) => m[0] === c.id)
@@ -125,12 +149,14 @@
         ${champCell(c.id, c.games, c.best ? '<span class="badge best">Best pick</span>' : "")}
         ${wrCell(c.wins, c.games)}
         <td class="num" title="Point estimate ±${pct(c.spread)} across ${c.k} lane opponents">±${pct(c.safe)}</td>
+        <td class="num floor" title="Winrate minus spread: roughly how it does in one of its harder matchups">${pct(c.floor)}</td>
+        <td class="num" title="Share of matchups expected to be above 50%">${pct(c.fav, 0)}</td>
         <td class="num">${c.games.toLocaleString()}</td>
         <td><div class="chips">${chips}</div></td>
       </tr>`;
     });
     $("first-body").innerHTML = rows.join("") ||
-      `<tr><td colspan="6" class="muted">No ${state.role} champion is above ${pct(MIN_BLIND_WR, 0)} with ${T.combo}+ games in this rank group yet.</td></tr>`;
+      `<tr><td colspan="8" class="muted">No ${state.role} champion is above ${pct(MIN_BLIND_WR, 0)} with ${T.combo}+ games in this rank group yet.</td></tr>`;
     $("first-note").textContent = hidden
       ? `${hidden} other ${state.role} champion${hidden === 1 ? "" : "s"} with ${T.combo}+ games ${hidden === 1 ? "is" : "are"} hidden for being at or below ${pct(MIN_BLIND_WR, 0)} winrate.`
       : "";
@@ -468,6 +494,9 @@
     if (!b) return;
     state.mode = b.dataset.mode; state.champ = null; writeHash(); render();
     if (state.mode === "counter" && state.enemy == null) input.focus();
+  });
+  $("best-toggle").addEventListener("click", () => {
+    state.bestFirst = !state.bestFirst; writeHash(); renderFirst();
   });
   $("back-button").addEventListener("click", () => {
     state.champ = null; history.pushState(null, "", hashFor()); render();

@@ -507,3 +507,11 @@ code { font-size: 13px; background: rgba(0, 0, 0, .07); padding: 1px 4px; border
   .build-tabs { display: grid; grid-template-columns: 1fr 1fr; }
   .build-tabs .glossy { justify-content: center; white-space: nowrap; font-size: 14px; padding: 7px 6px; }
 }
+
+/* "Best picks first" toggle above the first-pick table */
+.table-tools { display: flex; justify-content: flex-end; margin: -4px 0 10px; }
+.glossy[aria-pressed="true"] {
+  background: linear-gradient(#ffc163 0%, #f08a1c 48%, #d86a08 52%, #ec8016 100%);
+  border-color: #6b3204; text-shadow: 0 1px 2px #5a2400;
+}
+td.floor { font-family: var(--serif); font-size: 16px; color: #3a230d; }

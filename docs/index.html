@@ -64,9 +64,13 @@
         <p class="explain">
           Champions with at least a <strong id="min-wr">48%</strong> winrate whose winrate changes the least from
           one lane opponent to the next, sorted by lowest <strong>matchup spread</strong>.
-          <span class="badge best">Best pick</span> means no other champion here has both a higher winrate and a
-          lower spread.
+          <span class="badge best">Best pick</span> marks the 5 champions with the highest
+          <strong>bad-matchup winrate</strong> (winrate minus spread): a high winrate, a low spread, and a spread
+          that sits above 50%.
         </p>
+        <div class="table-tools">
+          <button id="best-toggle" class="glossy small" type="button" aria-pressed="false">★ Show best picks first</button>
+        </div>
         <div class="list-frame">
           <table>
             <thead>
@@ -75,6 +79,8 @@
                 <th>Champion</th>
                 <th class="num">Winrate</th>
                 <th class="num" title="How much this champion's winrate moves between lane opponents. A conservative estimate: we're about 84% sure the real spread is no bigger.">Spread ⓘ</th>
+                <th class="num" title="Winrate minus spread: roughly the winrate in one of its harder matchups. Higher is a safer blind pick.">Bad matchup ⓘ</th>
+                <th class="num" title="Share of this champion's matchups expected to be above 50%">Favorable ⓘ</th>
                 <th class="num">Games</th>
                 <th>Hardest matchups</th>
               </tr>
